@@ -9,8 +9,8 @@ public class Theatre {
         Director director1 = new Director("Генадий", "Горин", Gender.MALE, 12);
         Director director2 = new Director("Елена", "Светлова", Gender.FEMALE, 7);
 
-        String musicAuthor = "Шопен";
-        String choreographer = "Владимир";
+        Person musicAuthor = new Person("Фредерик", "Шопен", Gender.MALE);
+        Person choreographer = new Person("Владимир", "Петров", Gender.MALE);
 
         MusicalShow musicalShow = new MusicalShow("Холодильник", 60,
                 director1, musicAuthor, "Удивление нахождению в холодильнике.");
@@ -23,22 +23,22 @@ public class Theatre {
 
         musicalShow.addActor(actor1);
         musicalShow.addActor(actor3);
-        System.out.print("Участники музыкального шоу: ");
+        System.out.println("Участники музыкального шоу: ");
         musicalShow.printListOfActors();
 
         ballet.addActor(actor2);
         ballet.addActor(actor3);
-        System.out.print("Участники балета: ");
+        System.out.println("Участники балета: ");
         ballet.printListOfActors();
 
         opera.addActor(actor1);
         opera.addActor(actor2);
         opera.addActor(actor3);
-        System.out.print("Участники Оперы: ");
+        System.out.println("Участники Оперы: ");
         opera.printListOfActors();
 
         musicalShow.changeActor(actor2, "Крутой");
-        System.out.print("Измененные участники музыкального шоу: ");
+        System.out.println("Измененные участники музыкального шоу: ");
         musicalShow.printListOfActors();
 
         ballet.changeActor(actor2,"Кузнецов");
