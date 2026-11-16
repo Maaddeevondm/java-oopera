@@ -7,10 +7,6 @@ public class Actor extends Person{
         this.height = height;
     }
 
-    public int getHeight() {
-        return height;
-    }
-
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
